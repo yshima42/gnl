@@ -6,12 +6,11 @@
 /*   By: yshimazu <yshimazu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/13 12:29:28 by yshimazu          #+#    #+#             */
-/*   Updated: 2021/08/31 16:24:12 by yshimazu         ###   ########.fr       */
+/*   Updated: 2021/08/31 18:04:35 by yshimazu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-#include <stdio.h>
 
 static void	buff_clear(t_list **s_buff, t_list *t_buff)
 {
@@ -89,7 +88,7 @@ static int	ft_getfd(t_list *t_buff, char *buff, char **ret)
 t_list	*ft_setlst(t_list **s_buff, int fd)
 {
 	t_list	*t_buff;
-	
+
 	if (!*s_buff)
 	{
 		t_buff = ft_lstnew(fd, "");

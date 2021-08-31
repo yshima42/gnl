@@ -6,11 +6,10 @@
 /*   By: yshimazu <yshimazu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/13 12:30:10 by yshimazu          #+#    #+#             */
-/*   Updated: 2021/08/31 16:08:46 by yshimazu         ###   ########.fr       */
+/*   Updated: 2021/08/31 18:09:14 by yshimazu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "get_next_line.h"
 
 t_list	*ft_lstnew(int fd, char *c)

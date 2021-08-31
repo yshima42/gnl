@@ -6,7 +6,7 @@
 /*   By: yshimazu <yshimazu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/13 12:30:31 by yshimazu          #+#    #+#             */
-/*   Updated: 2021/08/31 16:26:59 by yshimazu         ###   ########.fr       */
+/*   Updated: 2021/08/31 18:08:38 by yshimazu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 256
-# endif
+# include <stdio.h>
 
 # define SUCCESS 1
 # define END_OF_FILE 0

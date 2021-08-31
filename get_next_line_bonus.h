@@ -6,19 +6,16 @@
 /*   By: yshimazu <yshimazu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/13 12:30:31 by yshimazu          #+#    #+#             */
-/*   Updated: 2021/08/31 14:47:52 by yshimazu         ###   ########.fr       */
+/*   Updated: 2021/08/31 18:09:11 by yshimazu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 
 # include <unistd.h>
 # include <stdlib.h>
-
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 256
-# endif
+# include <stdio.h>
 
 # define SUCCESS 1
 # define END_OF_FILE 0

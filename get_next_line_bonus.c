@@ -6,12 +6,11 @@
 /*   By: yshimazu <yshimazu@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/13 12:29:28 by yshimazu          #+#    #+#             */
-/*   Updated: 2021/08/31 14:48:41 by yshimazu         ###   ########.fr       */
+/*   Updated: 2021/08/31 18:16:54 by yshimazu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
-#include <stdio.h>
+#include "get_next_line_bonus.h"
 
 static void	buff_clear(t_list **s_buff, t_list *t_buff)
 {
@@ -90,13 +89,13 @@ t_list	*ft_setlst(t_list **s_buff, int fd)
 {
 	t_list	*t_buff;
 
-	t_buff = *s_buff;
 	if (!*s_buff)
 	{
 		t_buff = ft_lstnew(fd, "");
 		*s_buff = t_buff;
 		return (t_buff);
 	}
+	t_buff = *s_buff;
 	while (t_buff && t_buff->fd != fd)
 		t_buff = t_buff->next;
 	if (t_buff)
